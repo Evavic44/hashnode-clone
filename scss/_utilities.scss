@@ -3,13 +3,14 @@
 // Button
 %btn-shared {
   display: inline-block;
-  padding: 0.7rem 1.5rem;
+  padding: 0.75rem 1.25rem;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: 0.1s ease-in;
   text-decoration: none;
   border: none;
-  color: #fff;
+  font-weight: $weight-medium;
+  font-size: $font-small;
 }
 
 .btn {
@@ -17,6 +18,7 @@
 
   &-primary {
     background: $primary-color;
+    color: #fff;
 
     &:hover {
       opacity: 0.8;
@@ -24,7 +26,23 @@
   }
 
   &-secondary {
+    border-radius: 30px;
     background: $secondary-color;
+    color: #fff;
+    font-size: $font-small;
+    padding: 0.6rem 1.7rem;
+  }
+
+  &-light {
+    background: initial;
+    color: $text-primary-color;
+    opacity: 0.8;
+    border: $border-primary;
+
+    &:hover {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -2px,
+        rgba(0, 0, 0, 0.3) 0px 2px 5px -3px;
+    }
   }
 }
 
@@ -32,4 +50,42 @@
 %flex-align {
   display: flex;
   align-items: center;
+}
+
+// Heading text
+%heading-one {
+  font-size: $font-xlarge;
+  letter-spacing: -0.15rem;
+  line-height: 1.2;
+  color: $text-secondary-color;
+  margin-bottom: 1rem;
+}
+
+// Card one
+.card-container-one {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  grid-gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img {
+      width: 150px;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: $text-primary-color-2;
+      font-weight: 600;
+    }
+  }
 }
