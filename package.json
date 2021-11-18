@@ -1,0 +1,22 @@
+{
+  "name": "hashnode-clone",
+  "version": "1.0.0",
+  "description": "Hashnode clone",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evavic44/hashnode-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evavic44/hashnode-clone/issues"
+  },
+  "homepage": "https://github.com/Evavic44/hashnode-clone#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
