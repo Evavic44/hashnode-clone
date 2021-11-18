@@ -1,2 +1,6 @@
 body {
-  background: red; }
+  background: #f4f4f4; }
+
+img {
+  width: 50px;
+  font-size: 1rem; }
