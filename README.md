@@ -1,6 +1,6 @@
-<div align="center"><img width="100px" alt="hashnode-logo" src="https://user-images.githubusercontent.com/62628408/142336756-befa8376-e6ad-4770-8c3c-1503867af95a.png"></div>
+<div align="center"><img width="60px" alt="hashnode-logo" src="https://user-images.githubusercontent.com/62628408/142336756-befa8376-e6ad-4770-8c3c-1503867af95a.png"></div>
 
-<h1 align="center">Hashnode Clone</a>
+<h1 align="center">Hashnode Clone</h1>
 
 <p></p>
 
