@@ -2,25 +2,67 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 .btn {
   display: inline-block;
-  padding: 0.7rem 1.5rem;
+  padding: 0.75rem 1.25rem;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: 0.1s ease-in;
   text-decoration: none;
   border: none;
-  color: #fff; }
+  font-weight: 700;
+  font-size: 1.125rem; }
 
 .btn-primary {
-  background: #2962ff; }
+  background: #2962ff;
+  color: #fff; }
   .btn-primary:hover {
     opacity: 0.8; }
 
 .btn-secondary {
-  background: #139e5c; }
+  border-radius: 30px;
+  background: #139e5c;
+  color: #fff;
+  font-size: 1.125rem;
+  padding: 0.6rem 1.7rem; }
+
+.btn-light {
+  background: initial;
+  color: #111827;
+  opacity: 0.8;
+  border: 1px solid #e5e7eb; }
+  .btn-light:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -2px, rgba(0, 0, 0, 0.3) 0px 2px 5px -3px; }
 
 #logo a {
   display: flex;
   align-items: center; }
+
+.container .hero .hero-text h1 {
+  font-size: 3rem;
+  letter-spacing: -0.15rem;
+  line-height: 1.2;
+  color: #212121;
+  margin-bottom: 1rem; }
+
+.card-container-one {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
+  grid-gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto 4rem; }
+  .card-container-one .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .card-container-one .card img {
+      width: 150px;
+      margin-bottom: 1rem; }
+    .card-container-one .card h2 {
+      font-size: 1.2rem;
+      color: #333333;
+      font-weight: 600; }
 
 * {
   margin: 0;
@@ -29,9 +71,12 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: #fff;
+  background: #f5f7fa;
   color: #111827;
-  line-height: 1.5; }
+  line-height: 1.5;
+  max-width: 1400px;
+  margin: 0 auto;
+  letter-spacing: -0.03rem; }
 
 .white {
   color: white; }
@@ -44,12 +89,13 @@ ul {
 
 a {
   text-decoration: none;
-  color: #333333; }
+  color: #212121; }
 
 #container {
   display: grid;
   grid-template-columns: 1.06fr 6fr;
-  overflow-y: hidden; }
+  overflow-y: hidden;
+  background: #fff; }
   #container .left-container {
     display: flex;
     flex-direction: column;
@@ -84,6 +130,7 @@ a {
   align-items: center;
   justify-content: center;
   font-weight: 600;
+  font-size: 1rem;
   margin: 1.4rem 0 0.8rem; }
   .flex-start .btn img {
     width: 24px;
@@ -118,3 +165,82 @@ a {
     .flex-end a img {
       width: 35px;
       height: 35px; }
+
+.main-container .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 2.5rem;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid #e5e7eb;
+  margin-bottom: 0.2rem;
+  background: #fff;
+  z-index: 10; }
+  .main-container .navbar h2 {
+    font-size: 1.125rem;
+    color: #616161;
+    font-weight: 600;
+    letter-spacing: -0.03rem; }
+
+.buttons {
+  display: flex; }
+  .buttons .btn {
+    margin-left: 0.5rem; }
+
+.container {
+  padding: 0 2rem; }
+  .container .hero .highlight-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e6f4f0;
+    border-radius: 40px;
+    font-weight: 600; }
+    .container .hero .highlight-text p {
+      margin: 0 auto; }
+      .container .hero .highlight-text p a {
+        color: #2962ff; }
+  .container .hero .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem 0;
+    text-align: center; }
+    .container .hero .hero-text h1 {
+      max-width: 900px;
+      margin: 0 auto 1rem; }
+    .container .hero .hero-text p {
+      font-size: 1.3rem;
+      max-width: 400px;
+      margin-bottom: 2rem;
+      color: #757575; }
+
+article {
+  max-width: 800px;
+  margin: 3rem auto; }
+  article .bio-container {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #e5e7eb;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 30px -20px;
+    border-radius: 7px;
+    padding: 2rem; }
+  article img {
+    width: 8rem;
+    height: 8rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 7px;
+    margin-right: 1.5rem; }
+  article .bio h3 {
+    color: #333333;
+    font-weight: 600;
+    max-width: 550px;
+    font-size: 1.25rem; }
+  article .bio div {
+    margin-top: 1rem; }
+    article .bio div p {
+      font-weight: 300;
+      color: #616161;
+      font-size: 1.08rem; }
