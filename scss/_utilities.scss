@@ -1,0 +1,35 @@
+@import "variables";
+
+// Button
+%btn-shared {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+  text-decoration: none;
+  border: none;
+  color: #fff;
+}
+
+.btn {
+  @extend %btn-shared;
+
+  &-primary {
+    background: $primary-color;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &-secondary {
+    background: $secondary-color;
+  }
+}
+
+// Flex Align
+%flex-align {
+  display: flex;
+  align-items: center;
+}

@@ -1,4 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
+// Font Family
 $font-primary: "Inter", sans-serif;
 $font-secondary: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+// Color
+$primary-color: #2962ff;
+$secondary-color: rgb(19, 158, 92);
+
+// Dark mode
+$bg-primary: #232626;
+$bg-secondary: #18191a;
+$text-primary-color: #fff;
+$text-secondary-color: rgb(189, 189, 189);
+
+// Light mode
+$text-primary-color: rgb(17, 24, 39);
+$text-secondary-color: #333333;
+$text-other-color: rgb(117, 117, 117);
+$text-other: rgb(97, 97, 97);
+$bg-primary: #fff;
+$bg-secondary: #f5f7fa;
+
+// Text size
+$font-xlarge: 3.5rem;
+$font-large: 3rem;
+$font-medium: 2rem;
+$font-small: 1.5rem;
+$font-xsmall: 0.8rem;
+
+// Letter spacing
+$spacing-primary: -0.08rem;
+$spacing-secondary: -0.09rem;
+
+// Font weight
+$weight-large: 900px;
+$weight-medium: 700px;
+$weight-small: 600;
+$weight-thin: 300;
