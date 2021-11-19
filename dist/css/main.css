@@ -49,7 +49,7 @@ a {
 #container {
   display: grid;
   grid-template-columns: 1.06fr 6fr;
-  grid-template-rows: minmax(100vh, 100%); }
+  overflow-y: hidden; }
   #container .left-container {
     display: flex;
     flex-direction: column;
@@ -57,7 +57,11 @@ a {
     justify-content: space-between;
     background: #f5f7fa;
     border-right: 1px solid #e5e7eb;
-    padding: 1rem; }
+    padding: 1rem;
+    height: 100vh; }
+  #container .main-container {
+    height: 100vh;
+    overflow-y: scroll; }
 
 #logo {
   font-size: 1.6rem; }
@@ -80,7 +84,7 @@ a {
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  margin: 1.4rem 0; }
+  margin: 1.4rem 0 0.8rem; }
   .flex-start .btn img {
     width: 24px;
     height: 24px;
@@ -88,13 +92,15 @@ a {
 
 .header-icons {
   display: flex;
-  margin-bottom: 1.1rem;
   font-weight: 500;
-  color: #111; }
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem; }
+  .header-icons:hover {
+    background: #fff; }
   .header-icons img {
     width: 24px;
     height: 24px;
-    margin-right: 0.7rem;
+    margin-right: 0.5rem;
     margin-left: 0.2rem; }
 
 .flex-end {
@@ -102,15 +108,13 @@ a {
   flex-direction: column;
   align-items: center; }
   .flex-end a {
-    margin-bottom: 1rem; }
-    .flex-end a:last-child {
-      margin-top: 1rem; }
-      .flex-end a:last-child img {
-        width: 48px;
-        height: 48px;
-        border: 1px solid #fff;
-        border-radius: 50%;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; }
+    margin-bottom: 0.5rem; }
+    .flex-end a:last-child img {
+      width: 48px;
+      height: 48px;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; }
     .flex-end a img {
       width: 35px;
       height: 35px; }
