@@ -332,26 +332,74 @@ article {
 .features {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 2rem; }
   .features h2 {
     font-size: 2.25rem;
     color: #333333;
     margin-bottom: 2rem;
     font-weight: 600; }
-  .features .card-container .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid #e5e7eb;
-    padding: 2rem; }
-    .features .card-container .card img {
-      width: 60px; }
-    .features .card-container .card h3 {
-      padding: 1.5rem 0 0.5rem;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #424242;
-      line-height: 2rem;
-      padding: 1rem; }
+  .features .card-container {
+    margin-bottom: 2rem; }
+    .features .card-container .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem; }
+      .features .card-container .card:nth-child(odd) {
+        border: 1px solid #e5e7eb;
+        border-radius: 7px; }
+      .features .card-container .card img {
+        width: 60px;
+        height: 60px; }
+      .features .card-container .card h3 {
+        padding: 1.5rem 0 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #424242;
+        line-height: 2rem;
+        padding: 1rem; }
+      .features .card-container .card p {
+        color: #616161;
+        letter-spacing: 0.01rem; }
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3rem; }
+  .trending h2 {
+    font-size: 2.25rem;
+    color: #333333;
+    margin-bottom: 2rem;
+    font-weight: 600; }
+  .trending .card-container-three {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .trending .card-container-three .card {
+      display: flex;
+      align-items: flex-start;
+      padding: 1.5rem; }
+      .trending .card-container-three .card img {
+        width: 100px;
+        border-radius: 50%;
+        margin-right: 1rem; }
+        .trending .card-container-three .card img:first-child {
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; }
+      .trending .card-container-three .card > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+        .trending .card-container-three .card > div a:first-child {
+          font-weight: 700;
+          font-size: 1.125rem;
+          letter-spacing: 0.02rem; }
+        .trending .card-container-three .card > div a:nth-child(2) {
+          color: #757575;
+          font-weight: 600;
+          margin-bottom: 0.4rem; }
+        .trending .card-container-three .card > div p {
+          color: #616161;
+          letter-spacing: 0.2px; }
