@@ -179,8 +179,6 @@ a {
 }
 
 .container {
-  padding: 0 2rem;
-
   .hero {
     .highlight-text {
       display: flex;
@@ -225,7 +223,7 @@ a {
 // Spotlight Users
 article {
   max-width: 800px;
-  margin: 3rem auto;
+  margin: 4rem auto;
 
   .bio-container {
     display: flex;
@@ -259,6 +257,108 @@ article {
         font-weight: $weight-thin;
         color: $text-other;
         font-size: 1.08rem;
+      }
+    }
+  }
+}
+
+// Section two
+.section-two {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    @extend %heading-two;
+  }
+
+  .card-container {
+    padding-bottom: 2rem;
+
+    .card {
+      padding: 2rem;
+    }
+  }
+
+  .card-container-three {
+    > div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      padding: 1.5rem 3rem;
+
+      &:nth-child(2) {
+        border: $border-primary;
+        border-radius: 7px;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        h3 {
+          font-size: 1.5rem;
+          color: $text-other-2;
+          font-weight: $weight-small;
+          padding-bottom: 0.3rem;
+          line-height: 2rem;
+        }
+
+        p {
+          padding-bottom: 0.3rem;
+          color: $text-other;
+        }
+      }
+    }
+  }
+}
+
+// Features
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: 2.25rem;
+    color: $text-primary-color-2;
+    margin-bottom: 2rem;
+    font-weight: $weight-small;
+  }
+
+  .card-container {
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: $border-primary;
+      padding: 2rem;
+
+      img {
+        width: 60px;
+      }
+
+      h3 {
+        padding: 1.5rem 0 0.5rem;
+        font-size: 1.5rem;
+        font-weight: $weight-small;
+        color: $text-other-2;
+        line-height: 2rem;
+        padding: 1rem;
       }
     }
   }

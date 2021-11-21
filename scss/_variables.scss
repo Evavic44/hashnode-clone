@@ -19,15 +19,15 @@ $text-primary-color: #111827;
 $text-primary-color-2: #333333;
 $text-secondary-color: #212121;
 $text-other-2: #424242;
-$text-other-color: rgb(117, 117, 117);
-$text-other: rgb(97, 97, 97);
+$text-other-color: #757575;
+$text-other: #616161;
 $bg-primary: #fff;
 $bg-secondary: #f5f7fa;
 $bg-other-color: #e6f4f0;
 
 // Text size
 $font-xlarge: 3rem;
-$font-large: 2.1rem;
+$font-large: 2.25rem;
 $font-medium: 2rem;
 $font-small: 1.125rem;
 $font-xsmall: 0.8rem;
@@ -49,3 +49,8 @@ $border-primary: 1px solid rgb(229, 231, 235);
 // Box shadow
 $shadow-one: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
   rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+// Align
+.align-center {
+  text-align: center;
+}

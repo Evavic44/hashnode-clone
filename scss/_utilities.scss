@@ -46,6 +46,17 @@
   }
 }
 
+// Section
+section {
+  padding: 0 2rem;
+}
+
+// Horizontal rule
+.underline {
+  width: 100%;
+  border-bottom: $border-primary;
+}
+
 // Flex Align
 %flex-align {
   display: flex;
@@ -59,6 +70,25 @@
   line-height: 1.2;
   color: $text-secondary-color;
   margin-bottom: 1rem;
+}
+
+%heading-two {
+  font-size: $font-large;
+  text-align: center;
+  font-weight: $weight-small;
+  line-height: 2.5rem;
+  color: $text-primary-color-2;
+  padding: 0 2.5rem;
+}
+
+.heading-two {
+  margin-bottom: 2.5rem;
+}
+
+// Grid card
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 // Card one
@@ -75,7 +105,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
 
     img {
       width: 150px;
@@ -87,5 +116,35 @@
       color: $text-primary-color-2;
       font-weight: 600;
     }
+  }
+}
+
+// Card two
+.card-container-two {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  padding: 2rem 0 3rem;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+
+    h2 {
+      font-size: 2.2rem;
+      color: $text-primary-color-2;
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      font-size: $font-small;
+    }
+  }
+
+  img {
+    width: 100%;
+    width: calc(100% + 40px);
   }
 }
