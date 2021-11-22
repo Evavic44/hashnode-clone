@@ -42,11 +42,37 @@ section {
   width: 100%;
   border-bottom: 1px solid #e5e7eb; }
 
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 0;
+  text-align: center; }
+  .header-text h1 {
+    max-width: 900px;
+    margin: 0 auto 1rem; }
+  .header-text p {
+    font-size: 1.3rem;
+    max-width: 400px;
+    margin-bottom: 2rem;
+    color: #757575; }
+
+.header-text-2 h2 {
+  font-size: 2rem;
+  color: #333333;
+  font-weight: 600; }
+
+.header-text-2 p {
+  color: #757575;
+  font-size: 1.5rem;
+  font-weight: 500;
+  max-width: 600px; }
+
 #logo a {
   display: flex;
   align-items: center; }
 
-.container .hero .hero-text h1 {
+.header-text h1 {
   font-size: 3rem;
   letter-spacing: -0.15rem;
   line-height: 1.2;
@@ -248,21 +274,6 @@ a {
     .container .hero .highlight-text p a {
       color: #2962ff; }
 
-.container .hero .hero-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 6rem 0;
-  text-align: center; }
-  .container .hero .hero-text h1 {
-    max-width: 900px;
-    margin: 0 auto 1rem; }
-  .container .hero .hero-text p {
-    font-size: 1.3rem;
-    max-width: 400px;
-    margin-bottom: 2rem;
-    color: #757575; }
-
 article {
   max-width: 800px;
   margin: 4rem auto; }
@@ -403,3 +414,108 @@ article {
         .trending .card-container-three .card > div p {
           color: #616161;
           letter-spacing: 0.2px; }
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0; }
+  .testimonials h2 {
+    font-size: 2.25rem;
+    color: #333333;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+    max-width: 500px;
+    margin: 0 auto; }
+  .testimonials .card-container {
+    margin: 2.5rem; }
+    .testimonials .card-container .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1.5rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 30px -20px;
+      margin: 1rem; }
+      .testimonials .card-container .card h3 {
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #333333;
+        margin-bottom: 1rem; }
+      .testimonials .card-container .card > div {
+        display: flex;
+        align-items: center; }
+        .testimonials .card-container .card > div img {
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          margin-right: 0.5rem;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; }
+        .testimonials .card-container .card > div h4 {
+          font-size: 0.9rem;
+          color: #757575; }
+        .testimonials .card-container .card > div p {
+          color: #616161;
+          font-size: 0.9rem; }
+
+#footer {
+  padding: 0 2.5rem; }
+  #footer .footer-start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem; }
+    #footer .footer-start div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start; }
+      #footer .footer-start div #logo {
+        margin-bottom: 0.5rem; }
+        #footer .footer-start div #logo img {
+          width: 35px;
+          height: 35px; }
+        #footer .footer-start div #logo a {
+          font-size: 2rem;
+          color: #333333; }
+      #footer .footer-start div p {
+        color: #616161;
+        max-width: 500px; }
+    #footer .footer-start .footer-img {
+      width: 25rem;
+      transform: translateY(-1.5rem);
+      background: white; }
+  #footer .footer-center {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 1.7fr;
+    margin-bottom: 4rem; }
+    #footer .footer-center ul {
+      color: #616161;
+      font-size: 0.9rem; }
+      #footer .footer-center ul h4 {
+        font-weight: 700;
+        margin-bottom: 0.7rem;
+        font-weight: 700;
+        padding: 0 1rem; }
+      #footer .footer-center ul li {
+        color: #424242; }
+        #footer .footer-center ul li a {
+          display: block;
+          padding: 0.3rem 1rem;
+          color: #424242;
+          font-weight: 500;
+          border-radius: 5px; }
+          #footer .footer-center ul li a:hover {
+            background: #f5f7fa; }
+    #footer .footer-center .footer-button {
+      text-align: right; }
+      #footer .footer-center .footer-button > div {
+        display: flex;
+        justify-content: flex-end; }
+        #footer .footer-center .footer-button > div a {
+          margin-right: 0.5rem; }
+      #footer .footer-center .footer-button p {
+        margin-top: 1rem;
+        font-size: 0.9rem; }

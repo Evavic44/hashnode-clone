@@ -57,6 +57,42 @@ section {
   border-bottom: $border-primary;
 }
 
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem 0;
+  text-align: center;
+
+  h1 {
+    @extend %heading-one;
+    max-width: 900px;
+    margin: 0 auto 1rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    max-width: 400px;
+    margin-bottom: 2rem;
+    color: $text-other-color;
+  }
+}
+
+.header-text-2 {
+  h2 {
+    font-size: $font-medium;
+    color: $text-primary-color-2;
+    font-weight: $weight-small;
+  }
+
+  p {
+    color: $text-other-color;
+    font-size: 1.5rem;
+    font-weight: $weight-xsmall;
+    max-width: 600px;
+  }
+}
+
 // Flex Align
 %flex-align {
   display: flex;
