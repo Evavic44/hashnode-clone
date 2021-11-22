@@ -519,3 +519,25 @@ article {
       #footer .footer-center .footer-button p {
         margin-top: 1rem;
         font-size: 0.9rem; }
+  #footer .footer-end {
+    display: flex;
+    margin-bottom: 2.5rem; }
+    #footer .footer-end a {
+      font-size: 1.2rem;
+      padding: 0.2rem 0.6rem;
+      color: #424242;
+      background: #eeeeee;
+      margin-right: 0.4rem;
+      border-radius: 5px; }
+      #footer .footer-end a:hover {
+        background: rgba(0, 0, 0, 0.1); }
+
+.masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-size: 0.9rem; }
+  .masthead a,
+  .masthead p {
+    color: #616161; }
