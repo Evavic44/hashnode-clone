@@ -187,8 +187,10 @@ a {
       background: $bg-other-color;
       border-radius: 40px;
       font-weight: $weight-small;
+      padding-right: 0.5rem;
 
       p {
+        text-align: center;
         margin: 0 auto;
 
         a {
@@ -604,5 +606,86 @@ article {
   a,
   p {
     color: $text-other;
+  }
+}
+
+// Media Queries
+
+// ================ @1000px =====================
+@media (max-width: 1025px) {
+  // Container
+  #container {
+    grid-template-columns: 2fr 6fr;
+
+    .left-container {
+      display: flex;
+      align-items: stretch;
+      padding: 1rem 0.7rem;
+    }
+  }
+
+  #logo {
+    display: flex;
+    justify-content: center;
+    font-size: $font-large;
+
+    a {
+      img {
+        width: 33px;
+        height: 33px;
+      }
+    }
+  }
+
+  .flex-start {
+    .fmenu {
+      padding: 0;
+    }
+  }
+
+  // Navigation
+  .main-container {
+    .navbar {
+      flex-direction: column;
+
+      h2 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  // Highlight Text
+  .container {
+    .hero {
+      .highlight-text {
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 1rem 2rem;
+
+        p {
+          margin-top: 0.5rem;
+          max-width: 500px;
+        }
+      }
+    }
+  }
+
+  .section-two {
+    .card-container-three {
+      .card {
+        padding: 0;
+        padding-bottom: 2rem;
+
+        &:nth-child(2) {
+          border: none;
+        }
+
+        img {
+          width: calc(100% - 450px);
+          margin-bottom: 1rem;
+        }
+      }
+    }
   }
 }
