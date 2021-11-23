@@ -367,7 +367,8 @@ article {
     font-size: 2.25rem;
     color: #333333;
     margin-bottom: 2rem;
-    font-weight: 600; }
+    font-weight: 600;
+    text-align: center; }
   .features .card-container {
     margin-bottom: 2rem; }
     .features .card-container .card {
@@ -595,4 +596,27 @@ article {
       border: none; }
     .section-two .card-container-three .card img {
       width: calc(100% - 450px);
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+  .features .card-container {
+    grid-template-columns: repeat(2, 1fr); }
+    .features .card-container .card:nth-child(odd) {
+      border: none; }
+  .trending .card-container-three {
+    grid-template-columns: 1fr; }
+  .testimonials .card-container {
+    margin: 2.5rem 0; }
+  .header-text-2 {
+    padding: 0 1.5rem; }
+    .header-text-2 h2 {
+      font-size: 1.86rem;
+      max-width: 800px;
+      margin: 0 auto; }
+  #footer {
+    padding-top: 4rem; }
+    #footer .footer-start {
+      flex-direction: column;
+      align-items: flex-start; }
+      #footer .footer-start .footer-img {
+        margin-top: 3rem;
+        width: 320px;
+        transform: translateY(0); } }

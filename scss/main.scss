@@ -319,6 +319,7 @@ article {
     color: $text-primary-color-2;
     margin-bottom: 2rem;
     font-weight: $weight-small;
+    text-align: center;
   }
 
   .card-container {
@@ -671,6 +672,7 @@ article {
     }
   }
 
+  // Content ownership
   .section-two {
     .card-container-three {
       .card {
@@ -685,6 +687,59 @@ article {
           width: calc(100% - 450px);
           margin-bottom: 1rem;
         }
+      }
+    }
+  }
+
+  // Features
+  .features {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+
+      .card {
+        &:nth-child(odd) {
+          border: none;
+        }
+      }
+    }
+  }
+
+  // Trending
+  .trending {
+    .card-container-three {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Testimonials
+  .testimonials {
+    .card-container {
+      margin: 2.5rem 0;
+    }
+  }
+
+  // Header Text 2
+  .header-text-2 {
+    padding: 0 1.5rem;
+    h2 {
+      font-size: 1.86rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  // Footer
+  #footer {
+    padding-top: 4rem;
+
+    .footer-start {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .footer-img {
+        margin-top: 3rem;
+        width: 320px;
+        transform: translateY(0);
       }
     }
   }
