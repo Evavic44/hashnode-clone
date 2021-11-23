@@ -129,12 +129,7 @@ section {
 
 // Card one
 .card-container-one {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 200px;
-  grid-gap: 1rem;
-  max-width: 1000px;
-  margin: 0 auto 4rem;
 
   .card {
     display: flex;
@@ -160,7 +155,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 4rem;
-  padding: 2rem 0 3rem;
+  padding-bottom: 3rem;
 
   .card {
     display: flex;
@@ -182,5 +177,49 @@ section {
   img {
     width: 100%;
     width: calc(100% + 40px);
+  }
+}
+
+// Media Queries
+
+// ================ @1000px =====================
+@media (max-width: 1025px) {
+  %heading-one {
+    font-size: $font-large;
+  }
+
+  %heading-two {
+    font-size: $font-medium;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card-container-one {
+    grid-template-columns: repeat(2, 1fr);
+
+    .card {
+      img {
+        width: 140px;
+      }
+    }
+  }
+
+  // Card Two
+  .card-container-two {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+
+    img {
+      width: 350px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  // hero cards
+  .card-container-one {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
