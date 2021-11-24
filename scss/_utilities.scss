@@ -111,14 +111,19 @@ section {
 %heading-two {
   font-size: $font-large;
   text-align: center;
-  font-weight: $weight-small;
   line-height: 2.5rem;
   color: $text-primary-color-2;
   padding: 0 2.5rem;
 }
 
 .heading-two {
-  margin-bottom: 2.5rem;
+  color: $text-primary-color-2;
+  font-size: $font-large;
+  font-weight: $weight-small;
+  text-align: center;
+  line-height: 2.8rem;
+  margin: 2rem auto;
+  max-width: 600px;
 }
 
 // Grid card

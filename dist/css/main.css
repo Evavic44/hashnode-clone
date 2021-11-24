@@ -79,16 +79,14 @@ section {
   color: #212121;
   margin-bottom: 1rem; }
 
-.section-two h2 {
-  font-size: 2.25rem;
-  text-align: center;
-  font-weight: 600;
-  line-height: 2.5rem;
-  color: #333333;
-  padding: 0 2.5rem; }
-
 .heading-two {
-  margin-bottom: 2.5rem; }
+  color: #333333;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2.8rem;
+  margin: 2rem auto;
+  max-width: 600px; }
 
 .card-container {
   display: grid;
@@ -132,8 +130,6 @@ section {
 @media (max-width: 1025px) {
   .header-text h1 {
     font-size: 2.25rem; }
-  .section-two h2 {
-    font-size: 2rem; }
   .card-container {
     grid-template-columns: repeat(1, 1fr); }
   .card-container-one {
@@ -153,15 +149,6 @@ section {
     width: 100%; }
   section {
     padding: 0 1.5rem; } }
-
-@media (max-width: 768px) {
-  .section-two h2 {
-    font-size: 1rem;
-    text-align: center;
-    font-weight: 600;
-    line-height: 2.5rem;
-    color: #333333;
-    padding: 0 2.5rem; } }
 
 .align-center {
   text-align: center; }
@@ -334,10 +321,11 @@ article {
       font-size: 1.08rem; }
 
 .section-two {
-  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .section-two .heading-two {
+    margin-top: 4rem; }
   .section-two .card-container {
     padding-bottom: 2rem; }
     .section-two .card-container .card {
@@ -374,14 +362,7 @@ article {
 .features {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-bottom: 2rem; }
-  .features h2 {
-    font-size: 2.25rem;
-    color: #333333;
-    margin-bottom: 2rem;
-    font-weight: 600;
-    text-align: center; }
+  align-items: center; }
   .features .card-container {
     margin-bottom: 2rem; }
     .features .card-container .card {
@@ -413,13 +394,6 @@ article {
   flex-direction: column;
   align-items: center;
   padding-bottom: 3rem; }
-  .trending h2 {
-    font-size: 2.25rem;
-    color: #333333;
-    margin-bottom: 2rem;
-    font-weight: 600;
-    text-align: center;
-    line-height: 1.3; }
   .trending .card-container-three {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
@@ -454,14 +428,6 @@ article {
   flex-direction: column;
   align-items: center;
   margin: 3rem 0; }
-  .testimonials h2 {
-    font-size: 2.25rem;
-    color: #333333;
-    font-weight: 600;
-    text-align: center;
-    line-height: 1.2;
-    max-width: 500px;
-    margin: 0 auto; }
   .testimonials .card-container {
     margin: 2.5rem; }
     .testimonials .card-container .card {
@@ -636,12 +602,6 @@ article {
   .testimonials .card-container {
     grid-template-columns: 1fr;
     margin: 1rem; }
-  .header-text-2 {
-    padding: 0 1.5rem; }
-    .header-text-2 h2 {
-      font-size: 1.86rem;
-      max-width: 800px;
-      margin: 0 auto; }
   #footer {
     padding-top: 4rem; }
     #footer .footer-start {
@@ -685,8 +645,6 @@ article {
     margin-right: 0; } }
 
 @media (max-width: 768px) {
-  h2 {
-    font-size: 1rem; }
   .features .card-container {
     grid-template-columns: repeat(2, 1fr); }
     .features .card-container .card {
@@ -705,7 +663,9 @@ article {
   article .bio h3 {
     font-size: 1.125rem; }
   article .bio div p {
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+  .heading-two {
+    font-size: 2rem; } }
 
 @media (max-width: 400px) {
   .features .card-container {
