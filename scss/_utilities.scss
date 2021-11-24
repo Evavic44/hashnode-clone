@@ -222,4 +222,26 @@ section {
   .card-container-one {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  // Card Two
+  .card-container-two {
+    img {
+      width: 100%;
+    }
+  }
+
+  section {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  %heading-two {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: $weight-small;
+    line-height: 2.5rem;
+    color: $text-primary-color-2;
+    padding: 0 2.5rem;
+  }
 }
