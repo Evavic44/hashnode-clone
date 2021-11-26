@@ -202,7 +202,8 @@ a {
   font-size: 1.6rem; }
   #logo a {
     letter-spacing: -0.08rem;
-    font-weight: 700; }
+    font-weight: 700;
+    color: #333333; }
     #logo a img {
       margin-right: 0.2rem;
       width: 25px;
@@ -675,10 +676,10 @@ article {
         height: 25px; }
   .nav-menu {
     position: fixed;
-    left: -100vw;
+    left: -300%;
     top: 4.7rem;
     flex-direction: column;
-    min-width: 400px;
+    width: calc(100% / 1.4);
     text-align: left;
     transition: 0.3s;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -707,13 +708,22 @@ article {
       height: 25px;
       transform: translateY(-3px); }
   .main-container .navbar-secondary {
+    display: none;
     position: relative; }
   article .bio-container {
     flex-direction: column;
     justify-content: stretch; }
   article img {
     margin-bottom: 1rem;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .container .hero {
+    margin-top: 0.8rem; }
+  .testimonials .card-container {
+    margin: 1rem 0; }
+    .testimonials .card-container .card {
+      margin: 1rem 0; }
+  #footer {
+    padding: 2rem 1.4rem; } }
 
 @media (max-width: 768px) {
   .features .card-container {
