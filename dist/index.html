@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <script src="./js/script.js" async></script>
   </head>
   <body>
     <!-- Container -->
@@ -24,74 +25,53 @@
       <!-- Side bar -->
       <header class="left-container">
         <!-- Navigation -->
-        <div class="flex-start">
-          <!-- nav toggle button -->
-          <!-- <button class="fhide" data-action="showmenu"></button> -->
-          <div class="fmenu">
-            <!-- logo -->
-            <h1 id="logo">
-              <a href="https://hashnode.com"
-                ><img
-                  class="white"
-                  src="./images/logo/brand-icon.png"
-                  alt="Hashnode Brand Logo"
-                />hashnode</a
-              >
-            </h1>
+        <nav class="navbar">
+           <!-- Navbar icons Top -->
+          <div class="flex-start">
+               <!-- Hamburger -->
+               <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+               </div>
 
-            <!-- Write button -->
-            <a href="https://hashnode.com/create/story" class="btn btn-primary">
-              <img src="./icons/pencil.svg" alt="pencil icon" /> WRITE
-            </a>
+               <!-- logo -->
+               <h1 id="logo" class="invisible">
+               <a href="https://hashnode.com"><img class="white" src="./images/logo/brand-icon.png" alt="Hashnode Brand Logo"/>hashnode</a>
+               </h1>
 
-            <!-- Header icons -->
-            <a href="#" class="header-icons"
-              ><img src="./icons/feed.svg" alt="Feed icon" />My Feed</a
-            >
-            <a href="#" class="header-icons"
-              ><img src="./icons/explore.svg" alt="Explore icon" />Explore</a
-            >
-            <a href="#" class="header-icons"
-              ><img src="./icons/tags.svg" alt="Tags icon" />Tags</a
-            >
-            <a href="#" class="header-icons"
-              ><img
-                src="./icons/bookmarks.svg"
-                alt="Bookmark icon"
-              />Bookmarks</a
-            >
-            <a href="#" class="header-icons"
-              ><img src="./icons/search.svg" alt="Search icon" />Search</a
-            >
-            <a href="#" class="header-icons"
-              ><img src="./icons/caret-down.svg" alt="Caret down icon" />More</a
-            >
+               
+               <div class="nav-menu">
+                  <!-- Write button -->
+                  <a href="https://hashnode.com/create/story" class="btn btn-primary"><img src="./icons/pencil.svg" alt="pencil icon" />WRITE</a>
+                  <!-- Header icons -->
+                  <a href="#" class="nav-link"><img src="./icons/feed.svg" alt="Feed icon" />My Feed</a>
+                  <a href="#" class="nav-link"><img src="./icons/explore.svg" alt="Explore icon" />Explore</a>
+                  <a href="#" class="nav-link"><img src="./icons/tags.svg" alt="Tags icon" />Tags</a>
+                  <a href="#" class="nav-link"><img src="./icons/bookmarks.svg" alt="Bookmark icon" />Bookmarks</a>
+                  <a href="#" class="nav-link"><img src="./icons/search.svg" alt="Search icon" />Search</a>
+                  <a href="#" class="nav-link"><img src="./icons/caret-down.svg" alt="Caret down icon" />More</a>
+               </div>
           </div>
-        </div>
 
-        <!-- Header icons (bottom) -->
-        <div class="flex-end">
-          <a href="#" class="header-icons"
-            ><img src="./icons/light-toggle.svg" alt="Theme switch"
-          /></a>
-          <a href="#" class="header-icons"
-            ><img src="./icons/bell.svg" alt="Bell icon"
-          /></a>
-          <a href="#" class="header-icons"
-            ><img src="./icons/user-profile.png" alt="User profile"
-          /></a>
-        </div>
+            <!-- Navbar icons (bottom) -->
+            <div class="flex-end">
+               <a href="#" class="header-icons"><img src="./icons/light-toggle.svg" alt="Theme switch"/></a>
+               <a href="#" class="header-icons"><img src="./icons/bell.svg" alt="Bell icon"/></a>
+               <a href="#" class="header-icons"><img src="./icons/user-profile.png" alt="User profile"/></a>
+            </div>
+        </nav>
       </header>
 
       <!-- Main container -->
       <main class="main-container">
-        <nav class="navbar">
+        <div class="navbar-secondary">
           <h2>Blogging as a developer, done right!</h2>
           <div class="buttons">
             <a href="#" class="btn btn-light">Login</a>
             <a href="#" class="btn btn-primary">Create an account</a>
           </div>
-        </nav>
+        </div>
 
         <div class="container">
           <section class="hero">
