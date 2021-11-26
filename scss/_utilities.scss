@@ -111,14 +111,19 @@ section {
 %heading-two {
   font-size: $font-large;
   text-align: center;
-  font-weight: $weight-small;
   line-height: 2.5rem;
   color: $text-primary-color-2;
   padding: 0 2.5rem;
 }
 
 .heading-two {
-  margin-bottom: 2.5rem;
+  color: $text-primary-color-2;
+  font-size: $font-large;
+  font-weight: $weight-small;
+  text-align: center;
+  line-height: 2.8rem;
+  margin: 2rem auto;
+  max-width: 600px;
 }
 
 // Grid card
@@ -221,5 +226,27 @@ section {
   // hero cards
   .card-container-one {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  // Card Two
+  .card-container-two {
+    img {
+      width: 100%;
+    }
+  }
+
+  section {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  %heading-two {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: $weight-small;
+    line-height: 2.5rem;
+    color: $text-primary-color-2;
+    padding: 0 2.5rem;
   }
 }

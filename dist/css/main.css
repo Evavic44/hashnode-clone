@@ -79,16 +79,14 @@ section {
   color: #212121;
   margin-bottom: 1rem; }
 
-.section-two h2 {
-  font-size: 2.25rem;
-  text-align: center;
-  font-weight: 600;
-  line-height: 2.5rem;
-  color: #333333;
-  padding: 0 2.5rem; }
-
 .heading-two {
-  margin-bottom: 2.5rem; }
+  color: #333333;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 2.8rem;
+  margin: 2rem auto;
+  max-width: 600px; }
 
 .card-container {
   display: grid;
@@ -132,8 +130,6 @@ section {
 @media (max-width: 1025px) {
   .header-text h1 {
     font-size: 2.25rem; }
-  .section-two h2 {
-    font-size: 2rem; }
   .card-container {
     grid-template-columns: repeat(1, 1fr); }
   .card-container-one {
@@ -148,7 +144,11 @@ section {
 
 @media (max-width: 900px) {
   .card-container-one {
-    grid-template-columns: repeat(1, 1fr); } }
+    grid-template-columns: repeat(1, 1fr); }
+  .card-container-two img {
+    width: 100%; }
+  section {
+    padding: 0 1.5rem; } }
 
 .align-center {
   text-align: center; }
@@ -321,10 +321,11 @@ article {
       font-size: 1.08rem; }
 
 .section-two {
-  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .section-two .heading-two {
+    margin-top: 4rem; }
   .section-two .card-container {
     padding-bottom: 2rem; }
     .section-two .card-container .card {
@@ -361,13 +362,7 @@ article {
 .features {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding-bottom: 2rem; }
-  .features h2 {
-    font-size: 2.25rem;
-    color: #333333;
-    margin-bottom: 2rem;
-    font-weight: 600; }
+  align-items: center; }
   .features .card-container {
     margin-bottom: 2rem; }
     .features .card-container .card {
@@ -399,11 +394,6 @@ article {
   flex-direction: column;
   align-items: center;
   padding-bottom: 3rem; }
-  .trending h2 {
-    font-size: 2.25rem;
-    color: #333333;
-    margin-bottom: 2rem;
-    font-weight: 600; }
   .trending .card-container-three {
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
@@ -438,14 +428,6 @@ article {
   flex-direction: column;
   align-items: center;
   margin: 3rem 0; }
-  .testimonials h2 {
-    font-size: 2.25rem;
-    color: #333333;
-    font-weight: 600;
-    text-align: center;
-    line-height: 1.2;
-    max-width: 500px;
-    margin: 0 auto; }
   .testimonials .card-container {
     margin: 2.5rem; }
     .testimonials .card-container .card {
@@ -508,6 +490,7 @@ article {
   #footer .footer-center {
     display: grid;
     grid-template-columns: repeat(4, 1fr) 1.7fr;
+    row-gap: 1rem;
     margin-bottom: 4rem; }
     #footer .footer-center ul {
       color: #616161;
@@ -521,7 +504,7 @@ article {
         color: #424242; }
         #footer .footer-center ul li a {
           display: block;
-          padding: 0.3rem 1rem;
+          padding: 0.25rem 1rem;
           color: #424242;
           font-weight: 500;
           border-radius: 5px; }
@@ -554,11 +537,25 @@ article {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   font-size: 0.9rem; }
   .masthead a,
   .masthead p {
     color: #616161; }
+
+@media (max-width: 1200px) {
+  .testimonials .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem; }
+  #footer .footer-center {
+    grid-template-columns: repeat(4, 1fr); }
+    #footer .footer-center .footer-button {
+      margin-top: 1.5rem;
+      grid-column: 1 / 3;
+      justify-self: left;
+      text-align: left; }
+      #footer .footer-center .footer-button > div {
+        justify-content: flex-start; } }
 
 @media (max-width: 1025px) {
   #container {
@@ -595,4 +592,88 @@ article {
       border: none; }
     .section-two .card-container-three .card img {
       width: calc(100% - 450px);
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+  .features .card-container {
+    grid-template-columns: repeat(2, 1fr); }
+    .features .card-container .card:nth-child(odd) {
+      border: none; }
+  .trending .card-container-three {
+    grid-template-columns: 1fr; }
+  .testimonials .card-container {
+    grid-template-columns: 1fr;
+    margin: 1rem; }
+  #footer {
+    padding-top: 4rem; }
+    #footer .footer-start {
+      flex-direction: column;
+      align-items: flex-start; }
+      #footer .footer-start .footer-img {
+        margin-top: 3rem;
+        width: 320px;
+        transform: translateY(0); }
+    #footer .footer-center {
+      grid-template-columns: repeat(2, 1fr); }
+      #footer .footer-center .footer-button {
+        margin-top: 1.5rem;
+        grid-column: 1 / 3;
+        justify-self: left;
+        text-align: left; }
+        #footer .footer-center .footer-button > div {
+          justify-content: flex-start; }
+  .section-two .card-container-three .card img {
+    width: 200px;
+    margin-bottom: 1rem; }
+  .trending .card-container-three {
+    grid-template-columns: 1fr; }
+    .trending .card-container-three .card {
+      flex-direction: column;
+      padding: 1rem 0.9rem; } }
+
+@media (max-width: 770px) {
+  #container {
+    grid-template-columns: 1fr; }
+    #container .main-container {
+      height: 100%;
+      overflow-y: auto; }
+  .main-container .navbar {
+    position: relative; }
+  article .bio-container {
+    flex-direction: column;
+    justify-content: stretch; }
+  article img {
+    margin-bottom: 1rem;
+    margin-right: 0; } }
+
+@media (max-width: 768px) {
+  .features .card-container {
+    grid-template-columns: repeat(2, 1fr); }
+    .features .card-container .card {
+      padding: 1rem; }
+      .features .card-container .card h3 {
+        font-size: 1.125rem; }
+      .features .card-container .card p {
+        display: none; } }
+
+@media (max-width: 500px) {
+  article .bio-container {
+    padding: 1.2rem; }
+  article img {
+    margin-bottom: 1.5rem;
+    margin-right: 0; }
+  article .bio h3 {
+    font-size: 1.125rem; }
+  article .bio div p {
+    font-size: 0.9rem; }
+  .heading-two {
+    font-size: 2rem; } }
+
+@media (max-width: 400px) {
+  .features .card-container {
+    grid-template-columns: repeat(2, 1fr); }
+    .features .card-container .card img {
+      width: 40px;
+      height: 40px; }
+    .features .card-container .card h3 {
+      font-size: 1rem; }
+    .features .card-container .card p {
+      display: none; } }
