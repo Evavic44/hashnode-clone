@@ -66,6 +66,7 @@ a {
     @extend %flex-align;
     letter-spacing: $spacing-primary;
     font-weight: 700;
+    color: $text-primary-color-2;
 
     img {
       margin-right: 0.2rem;
@@ -840,15 +841,15 @@ article {
            width: 25px;
            height: 25px;
          }
-       }
+      }
    }
 
    .nav-menu {
       position: fixed;
-      left: -100vw;
+      left: -300%;
       top: 4.7rem;
       flex-direction: column;
-      min-width: 400px;
+      width: calc(100% / 1.4);
       text-align: left;
       transition: 0.3s;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -896,6 +897,7 @@ article {
 
   .main-container {
     .navbar-secondary {
+       display: none;
       position: relative;
     }
   }
@@ -911,6 +913,28 @@ article {
       margin-right: 0;
     }
   }
+
+   // Highlight Text
+   .container {
+      .hero {
+      margin-top: 0.8rem;
+      }
+   }
+
+   // Testimonials
+  .testimonials {
+   .card-container {
+     margin: 1rem 0;
+
+     .card {
+        margin: 1rem 0;
+     }
+   }
+ }
+
+ #footer {
+    padding: 2rem 1.4rem;
+ }
 }
 
 // ================ @768px =====================
