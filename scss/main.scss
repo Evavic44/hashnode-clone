@@ -80,6 +80,11 @@ a {
 // Flex start
 .navbar {
   // Button
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 100%;
+
   .btn {
     display: flex;
     align-items: center;
@@ -803,10 +808,11 @@ article {
       top: 0;
       left: 0;
       width: 100%;
-      min-height: 100px;
+      height: 80px;
       background: #F5F7FA;
       border-bottom: $border-primary;
       display: flex;
+      flex-direction: row;
       justify-content: space-between;
       align-items: center;
       z-index: 100;
