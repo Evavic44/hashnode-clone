@@ -80,10 +80,10 @@ a {
 // Flex start
 .navbar {
   // Button
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 
   .btn {
     display: flex;
@@ -103,17 +103,17 @@ a {
 
 // Navigation
 .hamburger {
-   display: none;
+  display: none;
 }
 
 .bar {
-   display: block;
-   width: 20px;
-   height: 2px;
-   margin: 4px auto;
-   transition: all 0.3s ease-in-out;
-   border-radius: 30px;
-   background-color: gray;
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin: 4px auto;
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+  background-color: gray;
 }
 
 .nav-link {
@@ -789,121 +789,121 @@ article {
 // ================ Responsive Floating Hamburger menu ======================
 // ==========================================================================
 @media (max-width: 770px) {
-   #container {
-      grid-template-columns: 1fr;
-    
-      .left-container {
-        height: 0;
-      }
-    
-      .main-container {
-         margin-top: 4rem;
-         height: 100%;
-         overflow-y: auto;
-      }
-   }
+  #container {
+    grid-template-columns: 1fr;
 
-   .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 80px;
-      background: #F5F7FA;
-      border-bottom: $border-primary;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 100;
-      padding: 0 0.4rem;
-   }
+    .left-container {
+      height: 0;
+    }
 
-   .flex-start {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .main-container {
+      margin-top: 4rem;
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
 
-      .hamburger {
-         margin-right: 0.3rem;
-      }
-   }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #f5f7fa;
+    border-bottom: $border-primary;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 0 0.4rem;
+  }
 
-   .flex-end {
-      flex-direction: row;
+  .flex-start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-      a {
-         margin-bottom: 0;
-         padding: 0.2rem 0.5rem;
-     
-         &:last-child {
-           img {
-             width: 39px;
-             height: 39px;
-           }
-         }
-     
-         img {
-           width: 25px;
-           height: 25px;
-         }
-      }
-   }
+    .hamburger {
+      margin-right: 0.3rem;
+    }
+  }
 
-   .nav-menu {
-      position: fixed;
-      left: -300%;
-      top: 4.7rem;
-      flex-direction: column;
-      width: calc(100% / 1.4);
-      text-align: left;
-      transition: 0.3s;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-      background-color: white;
-      padding: 1rem;
-      border-radius: 5px;
-   }
+  .flex-end {
+    flex-direction: row;
 
-   .nav-menu.active {
-      left: 20px;
-   }
+    a {
+      margin-bottom: 0;
+      padding: 0.2rem 0.5rem;
 
-   .nav-menu .nav-link {
-      padding: 0.6rem 0;
-      font-size: 1.05rem;
-   }
-
-   .hamburger {
-      display: block;
-      cursor: pointer;
-      padding: 0.2rem 0.4rem;
-      border: 1px dotted $bg-primary;
-   }
-
-   .hamburger:hover {
-      background: rgb(233, 231, 231);
-   }
-
-   .hamburger.active {
-      border: 1px dotted gray;
-   }
-
-   #logo {
-      font-size: 1.6rem;
-    
-      a {
+      &:last-child {
         img {
-          margin-right: 0.2rem;
-          width: 25px;
-          height: 25px;
-          transform: translateY(-3px);
+          width: 39px;
+          height: 39px;
         }
       }
-   }
+
+      img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -300%;
+    top: 4.7rem;
+    flex-direction: column;
+    width: calc(100% / 1.4);
+    text-align: left;
+    transition: 0.3s;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  .nav-menu.active {
+    left: 20px;
+  }
+
+  .nav-menu .nav-link {
+    padding: 0.6rem 0;
+    font-size: 1.05rem;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding: 0.2rem 0.4rem;
+    border: 1px dotted $bg-primary;
+  }
+
+  .hamburger:hover {
+    background: rgb(233, 231, 231);
+  }
+
+  .hamburger.active {
+    border: 1px dotted gray;
+  }
+
+  #logo {
+    font-size: 1.6rem;
+
+    a {
+      img {
+        margin-right: 0.2rem;
+        width: 25px;
+        height: 25px;
+        transform: translateY(-3px);
+      }
+    }
+  }
 
   .main-container {
     .navbar-secondary {
-       display: none;
+      display: none;
       position: relative;
     }
   }
@@ -920,27 +920,27 @@ article {
     }
   }
 
-   // Highlight Text
-   .container {
-      .hero {
+  // Highlight Text
+  .container {
+    .hero {
       margin-top: 0.8rem;
-      }
-   }
+    }
+  }
 
-   // Testimonials
+  // Testimonials
   .testimonials {
-   .card-container {
-     margin: 1rem 0;
+    .card-container {
+      margin: 1rem 0;
 
-     .card {
+      .card {
         margin: 1rem 0;
-     }
-   }
- }
+      }
+    }
+  }
 
- #footer {
+  #footer {
     padding: 2rem 1.4rem;
- }
+  }
 }
 
 // ================ @768px =====================
