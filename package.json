@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/Evavic44/hashnode-clone#readme",
   "devDependencies": {
-    "node-sass": "^6.0.1"
+    "node-sass": "^9.0.0"
   }
 }
